@@ -85,7 +85,16 @@ int main()
     }
     cout << endl;
     
+    set<int> result;
+    set_difference(s.begin(), s.end(), z.begin(), z.end(),
+    inserter(result, result.end()));
     
+    for (int x : result) {
+       
+        cout << x << " ";
+        
+    }
+    cout << endl;
     
     return 0;
 }
