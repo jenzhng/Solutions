@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     
-    int k = 6;
+    int k = 2;
     vector<int> mat  = {2,2,3,4,0,1,2,0};
     cout << "Vector: ";
     // if (mat[i] == 4)
@@ -22,7 +22,11 @@ int main()
     
     cout << endl;
     sort(new_arr.begin(), new_arr.end());
-    
+    for (int i = 1; i < new_arr.size() + 1; i++)
+         {
+            find_n.push_back(i);;
+        }    
+    cout << endl;
     for (int i = 0; i < new_arr.size(); i++)
          if (new_arr[i] == 0) {
           new_arr.erase (new_arr.begin()+i);
@@ -35,11 +39,7 @@ int main()
         }
         
     cout << endl;
-    for (int i = 1; i < new_arr.size() + 1; i++)
-         {
-            find_n.push_back(i);;
-        }    
-    cout << endl;
+    
     
   
     
